@@ -1,0 +1,27 @@
+<table mat-table [dataSource]="tableData" class="custom-table">
+  <ng-container matColumnDef="lob">
+    <th mat-header-cell *matHeaderCellDef>LOB</th>
+    <td mat-cell *matCellDef="let row">{{ row.lob }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="automationName" >
+    <th mat-header-cell *matHeaderCellDef>Automation Name</th>
+    <td mat-cell *matCellDef="let row">{{ row.automationName }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="count" >
+    <th mat-header-cell *matHeaderCellDef>Count</th>
+    <td mat-cell *matCellDef="let row"> {{ row.count }}</td>
+  </ng-container>
+
+  <tr
+    mat-header-row
+    *matHeaderRowDef="displayedColumns"
+    class="custom-header-row"
+  ></tr>
+  <tr
+    mat-row
+    *matRowDef="let row; columns: displayedColumns"
+    class="custom-row"
+  ></tr>
+</table>

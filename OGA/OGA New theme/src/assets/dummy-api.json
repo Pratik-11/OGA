@@ -1,0 +1,26 @@
+[
+  {
+    "LOB": "Test",
+    "From Date": "Jun 6 2023",
+    "To Date": "Jun 10 2023",
+    "Automation": "473 pricing",
+    "Frequency": "Monthyl",
+    "Year": "2023"
+  },
+  {
+    "LOB": "M&R",
+    "From Date": "Jun 6 2023",
+    "To Date": "Jun 11 2023",
+    "Automation": "Adj Marco.xml",
+    "Frequency": "Quarter1",
+    "Year": "2022"
+  },
+  {
+    "LOB": "C&R",
+    "From Date": "Jun 6 2023",
+    "To Date": "Jun 12 2023",
+    "Automation": "madjj",
+    "Frequency": "Quarter 2",
+    "Year": "2021"
+  }
+]

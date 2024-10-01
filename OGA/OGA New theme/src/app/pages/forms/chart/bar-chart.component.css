@@ -1,0 +1,18 @@
+.chart-container {
+  position: relative;
+  width: 602px;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  height: 275px;
+  margin-top: -47px; /* Adjust the margin-top value to move the chart upwards */
+  margin-left: -25px;
+  margin-bottom: 30px;
+}
+
+#barChart {
+  max-width: 650px; /* Adjust the maximum width of the chart container */
+  max-height: 275px;
+  align-items: center;
+}

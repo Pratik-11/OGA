@@ -1,0 +1,45 @@
+<form class="form2">
+  <div class="form-container">
+    <nb-card>
+      <nb-card-header class="header-title">Top 10 Used years</nb-card-header>
+      <nb-card-body>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="lob" class="label" style="font-size: 16px;">LOB</label>
+              <select [(ngModel)]="selectedValues.lob" class="custom-select" name="lob">
+                <option *ngFor="let lob of lobOptions" [value]="lob">{{ lob }}</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="year" class="label" style="font-size: 16px;">Year</label>
+              <select [(ngModel)]="selectedValues.year" class="custom-select" name="year">
+                <option *ngFor="let year of yearOptions" [value]="year">{{ year }}</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+                <label for="dateOption" class="label" style="font-size: 16px;">Frequency</label>
+                <select [(ngModel)]="selectedValues.frequency" class="custom-select" name="frequency">
+                  <option *ngFor="let dateOption of dateOptions" [value]="dateOption">{{ dateOption }}</option>
+                </select>
+              </div>
+          </div>
+        </div>
+        <div class="button-container text-center">
+          <button class="submit" type="submit" nbButton status="primary" (click)="onSubmit(); transferDataForm2(selectedValues)">Submit</button>
+          <button type="submit" nbButton status="info" (click)="onReset()">Reset</button>
+        </div>
+      </nb-card-body>
+    </nb-card>
+    <div class="table-container">
+      <app-table [selectedValues]="selectedValues"></app-table>
+    </div>
+    <div class="piechart-container" *ngIf="showChart">
+      <app-pie-chart [selectedValues]="selectedValues"></app-pie-chart>
+    </div>
+  </div>
+</form>

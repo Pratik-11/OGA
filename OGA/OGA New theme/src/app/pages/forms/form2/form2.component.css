@@ -1,0 +1,119 @@
+.form2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  flex: 0.2;
+  margin-left: 10px;
+  margin-right: -25px;
+  font-size: 12px;
+}
+
+.form-container {
+  width: 500px;
+  margin-left: -50px;
+  margin-top: -43px;
+  margin-right: -70px;
+
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  
+}
+
+.button-container button {
+  margin: 0 10px;
+  /* margin-top: -4px; */
+}
+
+
+select[name] {
+  font-size: 10px;
+}
+
+/* select[name="frequency"] option {
+  font-size: 12px;
+} */
+
+.col-sm-4 {
+  flex-basis: 32%;
+  
+}
+
+.form-group {
+  margin-bottom: 10px;
+  margin-block-end: -10px;
+  margin-left: 5px;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.header-title {
+  text-align: center;
+  color: white;
+  background-color: rgb(14, 90, 220);
+}
+
+.button{
+  align-content: center;
+  padding-left: 70px;
+  padding-right: 40px;
+}
+
+.label {
+  display:block;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+nb-select{
+  width:100%
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.table-container {
+  margin-top: -11px;
+  align-items: center;
+}
+
+.piechart-container {
+  margin-top: 20px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    flex-wrap: wrap;
+    flex-direction: column; /* Allow the forms to wrap on medium-sized screens */
+  }
+
+  .form1, .form2 {
+    flex-basis: 100%; /* Take up full width when wrapped */
+    margin-right: 0; /* Remove the horizontal spacing */
+    margin-left: 0; /* Remove the horizontal spacing */
+    margin-bottom: 10px; /* Add spacing between the forms */
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+    flex-direction: column;
+  }
+
+  .form1, .form2 {
+    flex-basis: 50%; /* Each form takes up 50% of the available width */
+    margin-right: 10px; /* Add desired spacing between form 1 and form 2 */
+    margin-left: 10px; /* Add desired spacing between form 1 and form 2 */
+  }
+}
